@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InvoCash | Unlock Instant Liquidity",
+  title: "Invo Cash",
   description:
     "Turn unpaid invoices into immediate liquidity and empower SMEs in Ethiopia.",
 };
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-t from-blue-800 via-[#0a021a] to-black `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white `}
       >
         {children}
         <Footer />

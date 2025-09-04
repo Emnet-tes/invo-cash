@@ -23,14 +23,14 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-20  bg-gradient-to-b from-blue-800 via-[#0a021a] to-black  px-6 md:px-12 min-h-screen" id="team">
+    <section className="py-20 bg-[#0070bf]/10 px-6 md:px-12" id="team">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
             Meet Our Team
           </h2>
-          <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
             A passionate team blending technology, finance, and strategy to
             revolutionize SME financing.
           </p>
@@ -41,15 +41,15 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg overflow-hidden hover:shadow-blue-500 hover:border-blue-400/40 transition-all duration-300"
+              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg hover:shadow-[#0070bf]/30 transition-all duration-300"
             >
               {/* Info */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-gray-900">
                   {member.name}
                 </h3>
-                <p className="text-blue-400 text-sm mb-3">{member.role}</p>
-                <p className="text-gray-400 text-sm">{member.bio}</p>
+                <p className="text-blue-600 text-sm mb-3">{member.role}</p>
+                <p className="text-gray-600 text-sm">{member.bio}</p>
               </div>
             </div>
           ))}

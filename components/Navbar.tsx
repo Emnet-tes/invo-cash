@@ -23,20 +23,19 @@ export default function Navbar() {
 
 
   return (
-    <nav className="flex justify-center my-6 top-0 left-0 w-full z-50 sticky ">
-      <div className="flex items-center justify-between w-4/5 md:w-full max-w-6xl px-6 py-3 rounded-full bg-blue-800/90 text-white shadow-lg">
+    <nav className="flex justify-center pt-6 top-0 left-0 w-full z-50 sticky ">
+      <div className="flex items-center justify-between w-4/5 md:w-full max-w-6xl px-6 py-3 rounded-full bg-[#0070bf] text-white shadow-lg">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
             src="/Asset 4pattern.png"
             alt="InvoCash Logo"
             className="h-8 w-auto"
-
           />
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-8 text-gray-300">
+        <div className="hidden md:flex gap-8 text-gray-100">
           <Link
             href="#home"
             className="hover:text-white transition"
@@ -85,7 +84,7 @@ export default function Navbar() {
         <div className="md:hidden flex items-center gap-3">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-md bg-gray-700 hover:bg-gray-600"
+            className="p-2 rounded-md  hover:bg-gray-600/50 cursor-pointer"
           >
             {isOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -94,7 +93,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-20 right-6 w-52 bg-gray-900 text-white rounded-xl shadow-lg md:hidden">
+        <div className="absolute top-20 right-6 w-52 bg-white text-black rounded-xl shadow-lg md:hidden">
           <div className="flex flex-col py-4 px-6 gap-4">
             <Link
               href="#"
@@ -102,7 +101,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               Home
             </Link>
@@ -112,7 +111,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               Problem
             </Link>
@@ -122,7 +121,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               Solution
             </Link>
@@ -132,7 +131,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               About Us
             </Link>
@@ -142,7 +141,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               Why Us
             </Link>
@@ -152,7 +151,7 @@ export default function Navbar() {
                 setIsOpen(false);
                 handleSmoothScroll(e);
               }}
-              className="hover:text-gray-300"
+              className="hover:text-blue-400"
             >
               Team
             </Link>
